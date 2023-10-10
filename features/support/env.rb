@@ -3,11 +3,13 @@ require 'capybara/dsl'
 require 'capybara/rspec/matchers'
 require 'selenium-webdriver'
 require 'site_prism'
-require_relative 'page_helper'
+require_relative 'page_helper.rb'
+require_relative 'helper.rb'
 
 World(Capybara::DSL)
 World(Capybara::RSpecMatchers)
-# World(PageObjects)
+World(PageObjects)
+World(Helper)
 
 BROWSER = ENV['BROWSER']
 AMBIENTE = ENV['AMBIENTE']
