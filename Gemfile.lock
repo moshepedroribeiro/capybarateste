@@ -13,6 +13,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    childprocess (4.1.0)
     cucumber (9.0.2)
       builder (~> 3.2, >= 3.2.4)
       cucumber-ci-environment (~> 9.2, >= 9.2.0)
@@ -67,10 +68,10 @@ GEM
       rspec-support (~> 3.12.0)
     rspec-support (3.12.1)
     rubyzip (2.3.2)
-    selenium-webdriver (4.9.0)
+    selenium-webdriver (4.0.0)
+      childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
-      websocket (~> 1.0)
+      rubyzip (>= 1.2.2)
     site_prism (4.0.3)
       addressable (~> 2.8)
       capybara (~> 3.27)
@@ -78,7 +79,6 @@ GEM
     site_prism-all_there (2.0.2)
     sys-uname (1.2.3)
       ffi (~> 1.1)
-    websocket (1.2.10)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -89,7 +89,7 @@ DEPENDENCIES
   capybara
   cucumber
   rspec
-  selenium-webdriver
+  selenium-webdriver (= 4.0.0)
   site_prism
 
 BUNDLED WITH

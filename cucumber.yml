@@ -1,0 +1,15 @@
+---
+
+default: --profile pretty -p homolog -p chrome
+
+pretty: --format pretty
+progress: --format progress
+
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+firefox: BROWSER=firefox
+safari: BROWSER=safari
+ie: BROWSER=ie
